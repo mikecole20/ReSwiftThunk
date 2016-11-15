@@ -1,6 +1,13 @@
 # ReSwiftThunk
 A thunk middleware for [ReSwift](https://github.com/ReSwift/ReSwift).
 
+## Installation
+
+Add `ReSwiftThunk` to your project using Cocoapods.
+```
+pod 'ReSwiftThunk', '~> 0.1'
+```
+
 ## Usage
 Include the `ThunkMiddleware` when you create your ReSwift store.
 ```

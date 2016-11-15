@@ -9,5 +9,5 @@
 import ReSwift
 
 public struct ThunkAction: Action {
-    var action: (@escaping ReSwift.DispatchFunction, @escaping ReSwift.GetState) -> Any
+    public var action: (@escaping ReSwift.DispatchFunction, @escaping ReSwift.GetState) -> Any
 }

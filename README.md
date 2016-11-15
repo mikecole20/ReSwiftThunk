@@ -20,7 +20,7 @@ struct ActionResetPasswordSuccess: Action {
 }
 
 struct ActionResetPasswordFailure: Action {
-var error: Error
+    var error: Error
 }
 
 public func resetPassword(email: String) -> ThunkAction {

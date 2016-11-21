@@ -3,9 +3,14 @@ A thunk middleware for [ReSwift](https://github.com/ReSwift/ReSwift).
 
 ## Installation
 
-Add `ReSwiftThunk` to your project using Cocoapods.
+### Cocoapods
 ```
 pod 'ReSwiftThunk', '~> 0.1'
+```
+
+### Carthage
+```
+github "mikecole20/ReSwiftThunk" ~> 0.1
 ```
 
 ## Usage

@@ -1,0 +1,6 @@
+framework module Pods_ReSwiftThunkDemo {
+  umbrella header "Pods-ReSwiftThunkDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

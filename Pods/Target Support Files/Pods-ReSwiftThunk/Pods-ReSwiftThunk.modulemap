@@ -1,6 +1,0 @@
-framework module Pods_ReSwiftThunk {
-  umbrella header "Pods-ReSwiftThunk-umbrella.h"
-
-  export *
-  module * { export * }
-}

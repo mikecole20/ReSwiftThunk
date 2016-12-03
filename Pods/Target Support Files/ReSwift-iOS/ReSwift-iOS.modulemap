@@ -1,0 +1,6 @@
+framework module ReSwift {
+  umbrella header "ReSwift-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

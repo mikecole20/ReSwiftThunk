@@ -1,12 +1,22 @@
 PODS:
-  - ReSwift (3.0.0)
+  - ReSwift (4.0.0)
 
 DEPENDENCIES:
-  - ReSwift (~> 3.0)
+  - ReSwift (from `https://github.com/ReSwift/ReSwift`, branch `mjarvis/swift-4`)
+
+EXTERNAL SOURCES:
+  ReSwift:
+    :branch: mjarvis/swift-4
+    :git: https://github.com/ReSwift/ReSwift
+
+CHECKOUT OPTIONS:
+  ReSwift:
+    :commit: ec60407df5c84b589665f984dcaaefca295afbd6
+    :git: https://github.com/ReSwift/ReSwift
 
 SPEC CHECKSUMS:
-  ReSwift: f0255f4b4f2dacd12c5d97d34d13fc5dad6d6371
+  ReSwift: 85cb57267026cf4df4f6b05306bfce8ef74842c0
 
-PODFILE CHECKSUM: '094a3c4886f55de125938b6cea5dcd0d4213130a'
+PODFILE CHECKSUM: 697e849c59a13e2d3a1fa34862533ccac299640d
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

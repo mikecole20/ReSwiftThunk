@@ -8,11 +8,11 @@
 
 import ReSwift
 
-public struct ThunkAction: Action {
+public struct ThunkAction<State>: Action {
     
-    public var action: (@escaping ReSwift.DispatchFunction, @escaping ReSwift.GetState) -> Any
+    public var action: (@escaping DispatchFunction, @escaping () -> State?) -> Void
     
-    public init(action: @escaping (@escaping ReSwift.DispatchFunction, @escaping ReSwift.GetState) -> Any) {
+    public init(action: @escaping (@escaping DispatchFunction, @escaping () -> State?) -> Void) {
         self.action = action
     }
     

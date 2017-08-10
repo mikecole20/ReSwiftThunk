@@ -8,14 +8,14 @@
 
 import ReSwift
 
-public let ThunkMiddleware: Middleware = { dispatch, getState in
+public let ThunkMiddleware: Middleware<StateType> = { dispatch, getState in
     return { next in
         return { action in
-            guard let thunk = action as? ThunkAction, let validDispatch = dispatch else {
+            guard let thunk = action as? ThunkAction<StateType> else {
                 return next(action)
             }
             
-            return thunk.action(validDispatch, getState)
+            return thunk.action(dispatch, getState)
         }
     }
 }

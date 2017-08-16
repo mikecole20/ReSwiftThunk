@@ -19,7 +19,7 @@ Include the `ThunkMiddleware` when you create your ReSwift store.
 let mainStore = Store<AppState>(
     reducer: AppReducer(),
     state: nil,
-    middleware: [ThunkMiddleware]
+    middleware: [ThunkMiddleware()]
 )
 ```
 

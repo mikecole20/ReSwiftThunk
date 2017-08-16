@@ -23,7 +23,7 @@ let mainStore = Store<AppState>(
 )
 ```
 
-Extend `ThunkAction` to define your asyncronous actions. Usually, they will dispatch regular `Action`s inside. I like to use functions to create the `ThunkAction`.
+Extend `ThunkAction` to define your asynchronous actions. Usually, they will dispatch regular `Action`s inside. I like to use functions to create the `ThunkAction`.
 ```
 struct ActionRestPassword: Action {
 }

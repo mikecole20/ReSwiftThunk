@@ -4,27 +4,31 @@ A thunk middleware for [ReSwift](https://github.com/ReSwift/ReSwift).
 ## Installation
 
 ### Cocoapods
+
 ```
 pod 'ReSwiftThunk', '~> 0.1'
 ```
 
 ### Carthage
+
 ```
 github "mikecole20/ReSwiftThunk" ~> 0.1
 ```
 
 ## Usage
 Include the `ThunkMiddleware` when you create your ReSwift store.
-```
+
+```swift
 let mainStore = Store<AppState>(
     reducer: AppReducer(),
     state: nil,
-    middleware: [ThunkMiddleware]
+    middleware: [ThunkMiddleware()]
 )
 ```
 
-Extend `ThunkAction` to define your asyncronous actions. Usually, they will dispatch regular `Action`s inside. I like to use functions to create the `ThunkAction`.
-```
+Extend `ThunkAction` to define your asynchronous actions. Usually, they will dispatch regular `Action`s inside. I like to use functions to create the `ThunkAction`.
+
+```swift
 struct ActionRestPassword: Action {
 }
 
@@ -52,11 +56,12 @@ public func resetPassword(email: String) -> ThunkAction {
         }
     )
 }
-
 ```
+
 > Note that in this example, I am using [PromiseKit](https://github.com/mxcl/PromiseKit) so that the action returns a promise. This makes side effects in your views easy.
 
-Then dispatch the ThunkAction.
+Then dispatch the `ThunkAction`.
+
 ```
 let action = resetPassword(email: "email@gmail.com")
 let result = mainStore.dispatch(action)
@@ -69,4 +74,5 @@ if let promise = result as? Promise<Any> {
 }
 mainStore.dispatch
 ```
+
 > Once again, this example is using promises. You can return anything you want though, because ReSwift only requires a return of `Any`.

@@ -1,16 +1,19 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
 
-target 'ReSwiftThunk' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+abstract_target "ReSwiftThunk" do
   use_frameworks!
 
-  # Pods for ReSwiftThunk
   pod 'ReSwift', '~> 3.0'
-
-  target 'ReSwiftThunkTests' do
-    inherit! :search_paths
-    # Pods for testing
+  
+  target 'ReSwiftThunk-iOS' do
+    platform :ios, '8.0'
   end
-
+  
+  target 'ReSwiftThunk-macOS' do
+    platform :osx, '10.10'
+  end
+  
+  target 'ReSwiftThunk-watchOS' do
+    platform :watchos, '2.0'
+  end
 end

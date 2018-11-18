@@ -29,7 +29,7 @@ let mainStore = Store<AppState>(
 Extend `ThunkAction` to define your asynchronous actions. Usually, they will dispatch regular `Action`s inside. I like to use functions to create the `ThunkAction`.
 
 ```swift
-struct ActionRestPassword: Action {
+struct ActionResetPassword: Action {
 }
 
 struct ActionResetPasswordSuccess: Action {

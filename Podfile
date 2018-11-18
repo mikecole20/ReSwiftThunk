@@ -6,7 +6,7 @@ target 'ReSwiftThunk' do
   use_frameworks!
 
   # Pods for ReSwiftThunk
-  pod 'ReSwift', :git => 'https://github.com/ReSwift/ReSwift', :branch => 'mjarvis/swift-4'
+  pod 'ReSwift', '~> 4.0'
 
   target 'ReSwiftThunkTests' do
     inherit! :search_paths

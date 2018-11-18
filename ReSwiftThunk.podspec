@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ReSwiftThunk"
-  s.version          = "0.1.1"
+  s.version          = "1.0.0"
   s.summary          = "Thunk middleware for ReSwift"
   s.description      = <<-DESC
                           A thunk middleware for ReSwift. Allows developers to create easily create async actions. Works well with promises.
@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.requires_arc = true
   s.source_files     = 'ReSwiftThunk/**/*.swift'
-  s.dependency 'ReSwift', '~> 3.0'
+  s.dependency 'ReSwift', '~> 4.0'
 end

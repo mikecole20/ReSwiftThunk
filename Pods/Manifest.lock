@@ -1,12 +1,16 @@
 PODS:
-  - ReSwift (3.0.0)
+  - ReSwift (4.0.1)
 
 DEPENDENCIES:
-  - ReSwift (~> 3.0)
+  - ReSwift (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReSwift
 
 SPEC CHECKSUMS:
-  ReSwift: f0255f4b4f2dacd12c5d97d34d13fc5dad6d6371
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
 
-PODFILE CHECKSUM: '094a3c4886f55de125938b6cea5dcd0d4213130a'
+PODFILE CHECKSUM: e840ebf523a3f78c82839d98397099159b48c05f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3

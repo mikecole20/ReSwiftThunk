@@ -6,13 +6,13 @@ A thunk middleware for [ReSwift](https://github.com/ReSwift/ReSwift).
 ### Cocoapods
 
 ```
-pod 'ReSwiftThunk', '~> 0.1'
+pod 'ReSwiftThunk', '~> 1.0'
 ```
 
 ### Carthage
 
 ```
-github "mikecole20/ReSwiftThunk" ~> 0.1
+github "mikecole20/ReSwiftThunk" ~> 1.0
 ```
 
 ## Usage

@@ -1,6 +1,8 @@
 # ReSwiftThunk
 A thunk middleware for [ReSwift](https://github.com/ReSwift/ReSwift).
 
+⚠️ ReSwift now has a [first-party version of thunk middelware](https://github.com/ReSwift/ReSwift-Thunk). I recommend using the new version as it will be more actively maintained.
+
 ## Installation
 
 ### Cocoapods
